@@ -1,0 +1,96 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Barrios%
+, Idsardi%
+\BCBL {}\ \BBA {} Jiang%
+}{%
+Barrios%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Barrios2010}
+\APACinsertmetastar {%
+Barrios2010}%
+\begin{APACrefauthors}%
+Barrios, S.%
+, Idsardi, W.%
+\BCBL {}\ \BBA {} Jiang, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{When 'ship' is 'sheep' and 'pat' is 'pot'}} {{When
+  'ship' is 'sheep' and 'pat' is 'pot'}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Boston University Conference on Language Development
+  (BUCLD 35)} {Boston university conference on language development (bucld
+  35)}\ (\BPG~1).
+\newblock
+\begin{APACrefURL}
+  \url{https://mail.google.com/mail/?ui=2&view=bsp&ver=ohhl4rw8mbn4}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pallier%
+, Bosch%
+\BCBL {}\ \BBA {} Sebasti{\'a}n-Gall{\'e}s%
+}{%
+Pallier%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1997}}%
+}]{%
+Pallier1997a}
+\APACinsertmetastar {%
+Pallier1997a}%
+\begin{APACrefauthors}%
+Pallier, C.%
+, Bosch, L.%
+\BCBL {}\ \BBA {} Sebasti{\'a}n-Gall{\'e}s, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A limit on behavioral plasticity in speech perception}}
+  {{A limit on behavioral plasticity in speech perception}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Cognition}{64}{3}{B9--17}.
+\newblock
+\begin{APACrefURL} \url{http://www.ncbi.nlm.nih.gov/pubmed/9426508}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sebasti{\'a}n-Gall{\'e}s%
+, Rodr{\'\i}guez-Fornells%
+, de Diego-Balaguer%
+\BCBL {}\ \BBA {} D{\'\i}az%
+}{%
+Sebasti{\'a}n-Gall{\'e}s%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Sebastian-Galls2006}
+\APACinsertmetastar {%
+Sebastian-Galls2006}%
+\begin{APACrefauthors}%
+Sebasti{\'a}n-Gall{\'e}s, N.%
+, Rodr{\'\i}guez-Fornells, A.%
+, de Diego-Balaguer, R.%
+\BCBL {}\ \BBA {} D{\'\i}az, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{First- and Second-language Phonological Representations
+  in the Mental Lexicon}} {{First- and Second-language Phonological
+  Representations in the Mental Lexicon}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Cognitive Neuroscience}{18}{8}{1277--1291}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

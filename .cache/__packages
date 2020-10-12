@@ -1,0 +1,10 @@
+base
+slidify
+knitr
+tidyr
+dplyr
+ggplot2
+stargazer
+xtable
+pander
+plyr

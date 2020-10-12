@@ -1,0 +1,31 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Gorjian%
+, Hayati%
+\BCBL {}\ \BBA {} Pourkhoni%
+}{%
+Gorjian%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+gorjian2013using}
+\APACinsertmetastar {%
+gorjian2013using}%
+\begin{APACrefauthors}%
+Gorjian, B.%
+, Hayati, A.%
+\BCBL {}\ \BBA {} Pourkhoni, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Using Praat Software in Teaching Prosodic Features to
+  EFL Learners} {Using praat software in teaching prosodic features to efl
+  learners}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Procedia-Social and Behavioral Sciences}{84}{}{34--40}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
