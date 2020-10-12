@@ -1,101 +1,219 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
-  <head>
-    <title>PsychoPy</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="Joseph V. Casillas, PhD" />
-    <link href="assets/remark-css-0.0.1/hygge.css" rel="stylesheet" />
-    <link href="assets/remark-css-0.0.1/rutgers.css" rel="stylesheet" />
-    <link href="assets/remark-css-0.0.1/rutgers-fonts.css" rel="stylesheet" />
-  </head>
-  <body>
-    <textarea id="source">
-class: center, middle, inverse, title-slide
+<html>
+<head>
+  <title>La percepción categórica</title>
+  <meta charset="utf-8">
+  <meta name="description" content="La percepción categórica">
+  <meta name="author" content="Joseph V. Casillas">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="./assets/css/style.css"></link>
 
-# PsychoPy
-## Categorical perception
-### Joseph V. Casillas, PhD
-### Rutgers University</br>Primavera 2019</br>Última actualización: 2020-10-12
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
 
----
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+    
+  <slide class="nobackground">
+    <article class="flexbox vcenter">
+      <span>
+        <img width='300px' src="assets/img/psychopy.png">
+      </span>
+    </article>
+  </slide>
+    <slide class="title-slide segue nobackground">
+  
+  <aside class="gdbar">
+    <img src="assets/img/ua.png">
+  </aside>
+  
+  <hgroup class="auto-fadein">
+    <h1>La percepción categórica</h1>
+    <h2>y la psicolingüística del bilingüismo</h2>
+    <p>Joseph V. Casillas<br/>PhD Candidate</p>
+  </hgroup>
+  
+  <article></article>  
+  
+</slide>
+    
 
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  
+  <hgroup>
+    <h2>Plan</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Resumen de PsychoPy2</li>
+<li>Mini experimento</li>
+<li>La percepción categórica</li>
+<li>Resultados del experimento</li>
+</ul>
 
-# Plan
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
-- Resumen de PsychoPy2
-- Mini experimento
-- La percepción categórica
-- Resultados del experimento
+<slide class="segue" id="slide-2" style="background:grey;">
+  
+  <hgroup>
+    <h1>PsychoPy2</h1>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
----
-class: title-slide-section-grey
+<slide class="" id="slide-3" style="background:;">
+  
+  <hgroup>
+    <h2>PsychoPy2</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>¿Qué es?</h3>
 
-# PsychoPy2
+<ul class = "build incremental">
+<li>PsychoPy2 es un programa que sirve para realizar experimentos</li>
+<li>Se trata de presentar estímulos
 
----
+<ul>
+<li>palabras</li>
+<li>imágenes</li>
+<li>sonidos</li>
+<li>etc.</li>
+</ul></li>
+<li>Se utiliza para crear experimentos de psycología, psycofísica, neurociencia, lingüística, etc.</li>
+</ul>
 
-## PsychoPy2
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
-### ¿Qué es?
+<slide class="" id="slide-4" style="background:;">
+  
+  <hgroup>
+    <h2>PsychoPy2</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>¿Por qué me interesa?</h3>
 
-&gt;- PsychoPy2 es un programa que sirve para realizar experimentos
-- Se trata de presentar estímulos
-  - palabras
-  - imágenes
-  - sonidos
-  - etc.
-- Se utiliza para crear experimentos de psycología, psycofísica, neurociencia, lingüística, etc.
+<ul class = "build incremental">
+<li>Es gratis</li>
+<li>Es una aplicación crosplataforma</li>
+<li>Podéis recrear los experimentos que estudiáis en clase</li>
+</ul>
 
----
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
-## PsychoPy2
+<slide class="" id="slide-5" style="background:;">
+  
+  <hgroup>
+    <h2>Experimentos</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>PsychoPy2 sirve para...
 
-### ¿Por qué me interesa?
+<ul>
+<li><strong>2AFC</strong></li>
+<li>AX, AXB, ABX</li>
+<li>Decisión léxica (con masked prime)</li>
+<li>Identificación de fonema</li>
+<li>Juicios de gramaticalidad</li>
+<li>etc.</li>
+</ul></li>
+</ul>
 
-&gt;- Es gratis
-- Es una aplicación crosplataforma
-- Podéis recrear los experimentos que estudiáis en clase
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
----
+<slide class="" id="slide-6" style="background:;">
+  
+  <hgroup>
+    <h2>Para empezar</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Descargad la versión actual de PsychoPy2</h3>
 
-## Experimentos
+<ul>
+<li><a href="http://sourceforge.net/projects/psychpy/files/PsychoPy/">http://sourceforge.net/projects/psychpy/files/PsychoPy/</a></li>
+<li>También podéis buscar en google &#39;psychopy&#39;</li>
+<li>Escoged la versión &#39;standalone&#39; </li>
+</ul>
 
-- PsychoPy2 sirve para...
-    - **2AFC**
-    - AX, AXB, ABX
-    - Decisión léxica (con masked prime)
-    - Identificación de fonema
-    - Juicios de gramaticalidad
-    - etc.
+<p></br></p>
 
----
+<h3>Descargad archivos experimentales</h3>
 
-## Para empezar
+<ul>
+<li><a href="https://dl.dropboxusercontent.com/u/7256527/2AFC.zip">https://dl.dropboxusercontent.com/u/7256527/2AFC.zip</a></li>
+</ul>
 
-### Descargad la versión actual de PsychoPy2
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
-- http://sourceforge.net/projects/psychpy/files/PsychoPy/
-- También podéis buscar en google 'psychopy'
-- Escoged la versión 'standalone' 
+<slide class="segue" id="slide-7" style="background:grey;">
+  
+  <hgroup>
+    <h1>La interfaz</h1>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
-&lt;/br&gt;
+<slide class="" id="slide-8" style="background:;">
+  
+  <hgroup>
+    <h2>La interfaz (Modo &#39;coder&#39;)</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
 
-### Descargad archivos experimentales
-
-- https://dl.dropboxusercontent.com/u/7256527/2AFC.zip
-
---- .segue bg:grey
-
-# La interfaz
-
---- &amp;twocolnocenter
-
-## La interfaz (Modo 'coder')
-
-*** =left
-
-```
-import itertools
+<div style='float:left;width:65%;'>
+  <pre><code>import itertools
 
 def iter_primes():
   # an iterator of all numbers between 2 and +infinity
@@ -110,836 +228,1717 @@ for p in iter_primes():
   if p &gt; 1000:
     break
   print p
-```
+</code></pre>
 
-*** =right
+</div>
+<div style='float:right;width:35%;'>
+  <div style="float: right">
+  <img src="./assets/img/confundido.png">
+</div>
 
-&lt;div style="float: right"&gt;
-  &lt;img src="./assets/img/confundido.png"&gt;
-&lt;/div&gt;
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
----
+<slide class="" id="slide-9" style="background:;">
+  
+  <hgroup>
+    <h2>La interfaz (Modo &#39;builder&#39;)</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <div style="float: right">
+  <img src="./assets/img/screeny.png">
+</div>
 
-## La interfaz (Modo 'builder')
+<ul>
+<li>Provee una GUI</li>
+<li>Representación lineal de la sequencia del experiment (&#39;flow&#39;)</li>
+<li>Vista de los componentes</li>
+</ul>
 
-&lt;div style="float: right"&gt;
-  &lt;img src="./assets/img/screeny.png"&gt;
-&lt;/div&gt;
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
-- Provee una GUI
-- Representación lineal de la sequencia del experiment ('flow')
-- Vista de los componentes
+<slide class="" id="slide-10" style="background:;">
+  
+  <hgroup>
+    <h2>La interfaz (Experiment flow)</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>El experimento avanza de manera lineal de izquierda a derecha</li>
+<li>Cada elemento (una rutina) termina antes de avanzar</li>
+<li>Parecido a las diapositivas de una presentación power point</li>
+</ul>
 
----
+<p></br></p>
 
-## La interfaz (Experiment flow)
+<div align="center">
+  <img src="./assets/img/flow.png">
+</div>
 
-- El experimento avanza de manera lineal de izquierda a derecha
-- Cada elemento (una rutina) termina antes de avanzar
-- Parecido a las diapositivas de una presentación power point
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
-&lt;/br&gt;
+<slide class="" id="slide-11" style="background:;">
+  
+  <hgroup>
+    <h2>Las rutinas</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Vista individual de cada &#39;slide&#39;</li>
+<li>Compuestas de una serie de componentes que realizan una tarea</li>
+</ul>
 
-&lt;div align="center"&gt;
-  &lt;img src="./assets/img/flow.png"&gt;
-&lt;/div&gt;
+<div align="center">
+  <img src="./assets/img/routines.png">
+</div>
 
----
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
-## Las rutinas
+<slide class="" id="slide-12" style="background:;">
+  
+  <hgroup>
+    <h2>Lista de componentes</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li>Stimuli
 
-- Vista individual de cada 'slide'
-- Compuestas de una serie de componentes que realizan una tarea
+<ul>
+<li>Texto/Audio/Img/Video</li>
+</ul></li>
+<li>Responses
 
-&lt;div align="center"&gt;
-  &lt;img src="./assets/img/routines.png"&gt;
-&lt;/div&gt;
+<ul>
+<li>Keyboard, lykert scales, button boxes, mouse tracking, eye tracking, microphone</li>
+</ul></li>
+<li>Custom
 
---- &amp;twocol
+<ul>
+<li>Python code</li>
+</ul></li>
+</ul>
 
-## Lista de componentes
+</div>
+<div style='float:right;width:48%;'>
+  <div style="float: right">
+  <img src="./assets/img/components.png">
+</div>
 
-*** =left
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
-- Stimuli
-    - Texto/Audio/Img/Video
-- Responses
-	- Keyboard, lykert scales, button boxes, mouse tracking, eye tracking, microphone
-- Custom
-	- Python code
+<slide class="segue" id="slide-13" style="background:grey;">
+  
+  <hgroup>
+    <h1>Demo</h1>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
-*** =right
+<slide class="" id="slide-14" style="background:;">
+  
+  <hgroup>
+    <h2>2AFC</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Two alternative forced choice</li>
+<li>También conocido como <code>identification</code> o <code>classification</code></li>
+<li>Se presenta un estímulo (normalmente audio)</li>
+<li>El estímulo se clasifica/identifica como una de dos opciones</li>
+</ul>
 
-&lt;div style="float: right"&gt;
-  &lt;img src="./assets/img/components.png"&gt;
-&lt;/div&gt;
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
---- .segue bg:grey
+<slide class="" id="slide-15" style="background:;">
+  
+  <article data-timings="">
+    <div align="center">
+  <img src="./assets/img/2afc1.png">
+</div>
 
-# Demo
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
----
+<slide class="" id="slide-16" style="background:;">
+  
+  <article data-timings="">
+    <div align="center">
+  <img src="./assets/img/2afc2i.png">
+</div>
 
-## 2AFC
-
-- Two alternative forced choice
-- También conocido como ```identification``` o ```classification```
-- Se presenta un estímulo (normalmente audio)
-- El estímulo se clasifica/identifica como una de dos opciones
-
----
-
-&lt;div align="center"&gt;
-  &lt;img src="./assets/img/2afc1.png"&gt;
-&lt;/div&gt;
-
----
-
-&lt;div align="center"&gt;
-  &lt;img src="./assets/img/2afc2i.png"&gt;
-&lt;/div&gt;
-
-&lt;audio controls&gt;
-  &lt;source src="./assets/img/sheep.ogg" type="audio/ogg"&gt;
-  &lt;source src="./assets/img/sheep.wav" type="audio/mpeg"&gt;
+<p><audio controls>
+  <source src="./assets/img/sheep.ogg" type="audio/ogg">
+  <source src="./assets/img/sheep.wav" type="audio/mpeg">
   Your browser does not support the audio element.
-&lt;/audio&gt;
+</audio></p>
 
----
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
-&lt;div align="center"&gt;
-  &lt;img src="./assets/img/2afc2i.png"&gt;
-&lt;/div&gt;
+<slide class="" id="slide-17" style="background:;">
+  
+  <article data-timings="">
+    <div align="center">
+  <img src="./assets/img/2afc2i.png">
+</div>
 
-&lt;audio controls&gt;
-  &lt;source src="./assets/img/ship.ogg" type="audio/ogg"&gt;
-  &lt;source src="./assets/img/ship.wav" type="audio/mpeg"&gt;
+<p><audio controls>
+  <source src="./assets/img/ship.ogg" type="audio/ogg">
+  <source src="./assets/img/ship.wav" type="audio/mpeg">
   Your browser does not support the audio element.
-&lt;/audio&gt;
+</audio></p>
 
----
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
-## Haced lo siguiente:
+<slide class="" id="slide-18" style="background:;">
+  
+  <hgroup>
+    <h2>Haced lo siguiente:</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ol>
+<li>Descargad el experimento 2AFC <a href="https://dl.dropboxusercontent.com/u/7256527/2AFC.zip">here</a></li>
+<li>Abrid el archivo &#39;<code>2AFC.psyexp</code>&#39;</li>
+</ol>
 
-1. Descargad el experimento 2AFC [here](https://dl.dropboxusercontent.com/u/7256527/2AFC.zip)
-2. Abrid el archivo '```2AFC.psyexp```'
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
----
+<slide class="" id="slide-19" style="background:;">
+  
+  <article data-timings="">
+    <p></br></p>
 
-&lt;/br&gt;
+<div align="center">
+  <img src="./assets/img/gui.png">
+</div>
 
-&lt;div align="center"&gt;
-  &lt;img src="./assets/img/gui.png"&gt;
-&lt;/div&gt;
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
----
+<slide class="" id="slide-20" style="background:;">
+  
+  <hgroup>
+    <h2>Haced lo siguiente:</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <div style="float:right">
+  <img width="200" src="./assets/img/run.png">  
+  <img width="20" src="./assets/img/fill.png">  
+  <img width="200" src="./assets/img/run2.png">
+</div>
 
-## Haced lo siguiente:
+<ol>
+<li>Descargad el experimento 2AFC <a href="">here</a></li>
+<li>Abrid el archivo &#39;<code>2AFC.psyexp</code>&#39;</li>
+<li>Haced click in el icono verde
 
-&lt;div style="float:right"&gt;
-  &lt;img width="200" src="./assets/img/run.png"&gt;  
-  &lt;img width="20" src="./assets/img/fill.png"&gt;  
-  &lt;img width="200" src="./assets/img/run2.png"&gt;
-&lt;/div&gt;
+<ul>
+<li>Participant = tus iniciales (ej. &#39;<strong>jc</strong>&#39;)</li>
+<li>Session = 001 </li>
+<li>Haced click en &#39;<strong>ok</strong>&#39;</li>
+</ul></li>
+<li>Usad las flechas del teclado para responder 
 
-1. Descargad el experimento 2AFC [here]()
-2. Abrid el archivo '```2AFC.psyexp```'
-3. Haced click in el icono verde
-  - Participant = tus iniciales (ej. '**jc**')
-  - Session = 001 
-  - Haced click en '**ok**'
-4. Usad las flechas del teclado para responder 
-  - 'ba' (izquierda) 
-  - 'pa' (derecha)
-  - Responded lo más rápido posible sin hacer errores
+<ul>
+<li>&#39;ba&#39; (izquierda) </li>
+<li>&#39;pa&#39; (derecha)</li>
+<li>Responded lo más rápido posible sin hacer errores</li>
+</ul></li>
+</ol>
 
----
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
-## Haced lo siguiente:
+<slide class="" id="slide-21" style="background:;">
+  
+  <hgroup>
+    <h2>Haced lo siguiente:</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <div style="float:right">
+  <img width="200" src="./assets/img/run.png">  
+  <img width="20" src="./assets/img/fill.png">  
+  <img width="200" src="./assets/img/run2.png">
+</div>
 
-&lt;div style="float:right"&gt;
-  &lt;img width="200" src="./assets/img/run.png"&gt;  
-  &lt;img width="20" src="./assets/img/fill.png"&gt;  
-  &lt;img width="200" src="./assets/img/run2.png"&gt;
-&lt;/div&gt;
+<h3>Al terminar...</h3>
 
-### Al terminar...
+<ol>
+<li>Id a la carpeta <code>2AFC</code> &gt; <code>data</code></li>
+<li>Buscar el archivo que termina en &#39;.<code>csv</code>&#39;</li>
+<li>Eviádmelo (<a href="mailto:jvcasill@email.arizona.edu">jvcasill@email.arizona.edu</a>) con el asunto <code>2AFC</code></li>
+</ol>
 
-1. Id a la carpeta ```2AFC``` &gt; ```data```
-2. Buscar el archivo que termina en '.```csv```'
-3. Eviádmelo (jvcasill@email.arizona.edu) con el asunto ```2AFC```
+<p></br></p>
 
-&lt;/br&gt;
+<h3>Después... considerad las siguientes preguntas</h3>
 
-### Después... considerad las siguientes preguntas
+<ul>
+<li>¿Podemos producir un sonido (pongamos [ba]) varias veces de exactamente la misma manera? ¿Por qué sí o no?</li>
+<li>¿Qué consecuencias tiene vuestra respuesta con respecto a la percepción del habla?</li>
+</ul>
 
-- ¿Podemos producir un sonido (pongamos [ba]) varias veces de exactamente la misma manera? ¿Por qué sí o no?
-- ¿Qué consecuencias tiene vuestra respuesta con respecto a la percepción del habla?
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
---- .segue bg:grey
+<slide class="segue" id="slide-22" style="background:grey;">
+  
+  <hgroup>
+    <h1>La percepción categórica</h1>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
-# La percepción categórica
+<slide class="" id="slide-23" style="background:;">
+  
+  <hgroup>
+    <h2>¿Cuáles son las diferencias entre /t/ del inglés y /t/ del español?</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
 
----
+<slide class="" id="slide-24" style="background:;">
+  
+  <article data-timings="">
+    <div align="center">
+    <img src="./assets/img/vot.png">
+</div>
 
-## ¿Cuáles son las diferencias entre /t/ del inglés y /t/ del español?
-
----
-
-&lt;div align="center"&gt;
-    &lt;img src="./assets/img/vot.png"&gt;
-&lt;/div&gt;
-
-&lt;audio controls&gt;
-  &lt;source src="./assets/img/taco.ogg" type="audio/ogg"&gt;
-  &lt;source src="./assets/img/taco.wav" type="audio/mpeg"&gt;
+<p><audio controls>
+  <source src="./assets/img/taco.ogg" type="audio/ogg">
+  <source src="./assets/img/taco.wav" type="audio/mpeg">
   Your browser does not support the audio element.
-&lt;/audio&gt;
-
----
-
-## Inglés vs. español
-
-### El sonido /t/ del español difiere del /t/ del inglés en cuanto al **punto de articulación** y VOT
-
-&lt;p&gt;&lt;/p&gt;
-
-- Punto de articulación: ¿Dónde se produce el contacto al pronunciar /t/?
-  - /t/ del español es dental 
-  - /t/ del inglés es alveolar
-
----
-
-## Inglés vs. español
-
-### El sonido /t/ del español difiere del /t/ del inglés en cuanto al punto de articulación y **VOT**
-
-&lt;p&gt;&lt;/p&gt;
-
-- **VOT** (voice-onset time): En las consonantes oclusivas, es la diferencia (en milisegundos) entre la explosión de la consonante y el comienzo de la fonación.
-  - Es el resultado de la coordinación de gestos articulatorios (la explosión y la vibración de las cuerdas vocales)
-  - VOT puede ser negativo, 0, o positivo y se usa para contrastar entre sonido sordos/sonoros
-
----
-
-## VOT
-
-&lt;div style="float:right"&gt;
-  &lt;img width="50" src="./assets/img/fill.png"&gt;
-  &lt;img src="./assets/img/confundido.png"&gt;
-&lt;/div&gt;
-
-- Español e inglés mantienen un contraste entre /**p t k**/ and /&lt;BLUE&gt;b d g&lt;/BLUE&gt;/ 
-- La realización fonética es diferente
-  - Español: /d/ tiene lead VOT y /t/ tiene short-lag VOT
-  - Inglés: /d/ tiene short-lag VOT y /t/ tiene aspiración
-
----
-
-&lt;/br&gt;&lt;/br&gt;
-
-&lt;div align="center"&gt;
-  &lt;img src="./assets/img/sp_en_stops.png"&gt;
-&lt;/div&gt;
-
----
-
-## La percepción del habla
-
-- ¿Cómo diferenciamos entre el habla y el ruido?
-- ¿Cómo extraemos la información relevante de una señal pobre?
-
----
-
-## La ausencia de invarianza
-
-- Los sonidos del habla nunca se pronuncian de la misma forma
-- Si digo ```taco``` [ˈta.ko] 10 veces, nunca es físicamente igual 
-- ¿Cómo es que somos capaces de relacionar el sonido con el concepto de un fonema?
-
----
-
-## La percepción categórica
-
-- "Equal sized physical differences are not equal sized psychologically."
-- No percibimos los continuos como continuos...
-- Las diferencias dentro de la misma categoría se disminuyen 
-- Las diferencias entre categorías se aumentan
-
----
-
-&lt;div align="center"&gt;  
-  &lt;img width="900" src="./assets/img/colors.png"&gt;
-&lt;/div&gt;
-
----
-
-&lt;div align="center"&gt;
-  &lt;img width="900" src="./assets/img/pc1.png"&gt; 
-&lt;/div&gt;
-
----
-
-&lt;div align="center"&gt;
-  &lt;img width="900" src="./assets/img/pc2.png"&gt;
-&lt;/div&gt;
-
----
-
-## La percepción categórica
-
-- ¿Cómo estudiamos la percepción categórica?
-  - 2AFC (identificación)
-  - AX (discriminación)
-
----
-
-&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;
-&lt;div align="center"&gt;
-  &lt;img width="900" src="./assets/img/bapa1.png"&gt;
-&lt;/div&gt;
-
----
-
-&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;
-&lt;div align="center"&gt;
-  &lt;img width="900" src="./assets/img/bapa2.png"&gt;
-&lt;/div&gt;
-
----
-
-&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;
-&lt;div align="center"&gt;
-  &lt;img width="900" src="./assets/img/bapa3.png"&gt;
-&lt;/div&gt;
-
----
-
-&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;
-&lt;div align="center"&gt;
-  &lt;img width="900" src="./assets/img/bapa4.png"&gt;
-&lt;/div&gt;
-
----
-
-&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;
-&lt;div align="center"&gt;
-  &lt;img width="900" src="./assets/img/bapa5.png"&gt;
-&lt;/div&gt;
-
----
-
-&lt;div align="center"&gt;
-  &lt;img width="900" src="./assets/img/bapa6.png"&gt;
-&lt;/div&gt;
-
----
-
-&lt;div align="center"&gt;
-  &lt;img width="900" src="./assets/img/bapa7.png"&gt;
-&lt;/div&gt;
-
----
-
-&lt;div align="center"&gt;
-  &lt;img width="900" src="./assets/img/pc3.png"&gt;
-&lt;/div&gt;
-
----
-
-## La percepción categórica
-
-- "Equal sized physical differences are not equal sized psychologically."
-- No percibimos los continuos como continuos...
-- Las diferencias dentro de la misma categoría se disminuyen 
-- Las diferencias entre categorías se aumentan
-
---- .segue bg:black
-
-# La percepción categórica y el bilingüismo
-
-&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;
-**Pallier et al. (1997)**
-
----
-
-## La percepción categórica
-
-### Pallier et al. (1997)
-
-- Bilingües secuenciales tempranos: español/catalán, catalán/español
-- El catalán cuenta con un contraste vocálico que no existe en español (/e/-/ɛ/)
-
----
-
-## La percepción categórica
-
-### Pallier et al. (1997)
-
-&lt;p&gt;&lt;/p&gt;
-&lt;div align="center"&gt;
-  &lt;img width="400" src="./assets/img/spanish.png"&gt; 
-  &lt;img width="400" src="./assets/img/catalan.png"&gt;
-&lt;/div&gt;
-
----
-
-## La percepción categórica
-
-### Pallier et al. (1997)
-
-- Bilingües secuenciales tempranos: español/catalán, catalán/español
-- El catalán cuenta con un contraste vocálico que no existe en español (/e/-/ɛ/)
-- Identificación (2AFC)
-    - "¿Escuchaste [ˈ**pe**.**ɾa**] (Peter) o [ˈ&lt;BLUE&gt;pɛ&lt;/BLUE&gt;.&lt;BLUE&gt;ɾa&lt;/BLUE&gt;] (pera)?"
-- Discriminación
-    - "¿Son iguales o son diferentes?"
-
----
-
-&lt;div align="center"&gt;
-  &lt;img src="./assets/img/pallier1.png"&gt;
-&lt;/div&gt;
-
----
-
-&lt;div align="center"&gt;
-  &lt;img src="./assets/img/pallier2.png"&gt;
-&lt;/div&gt;
-
----
-
-## La percepción categórica
-
-### Pallier et al. (1997)
-
-- Conclusión
-  - Los bilingües tempranos español/catalán no perciben el contraste entre las vocales /e/-/ɛ/ de manera categórica
-  - Estar expuesto a una edad temprana (durante el periodo sensible) no parece ser suficiente
-
---- .segue bg:black
-
-# La percepción categórica y el bilingüismo
-
-&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;
-**Language-specific stop perception in highly proficient Heritage Speakers**
-
-
-
-
-
-
-
-
-
-
-
----
-
-## La percepción categórica 
-
-### Bilingual Language Modes (Grosjean, 1998)
-
-&gt;[...] state of activation of the bilingual's languages and language processing 
-&gt;mechanisms at a given point in time (Grosjean, 2002)
-
-- Activation of languages increases/decreases as a function of communicative setting
-  - Bilingual mode: both languages activated
-  - Unilingual mode: one language activated
-- Some bilinguals can reduce cross-language interactions in a unilingual setting (Antoniou et al. 2010; Magloire and Green 1999)
-- **Do highly proficient HSs inhibit cross-language interaction effects a unilingual setting?**
-
----
-
-&lt;/br&gt;
-&lt;div align="center"&gt;
-  &lt;img width="900" src="./assets/img/sp_en_stops.png"&gt;
-&lt;/div&gt;
-
----
-
-## Method
-
-### Participants
-
-- 9 highly proficient Spanish/English bilinguals
-  - 6 females
-  - 3 males
-- Young adults: ages 20-26 
-- Bilingual Language Profile (BLP) questionnaire (-10.16)
-
----
-
-## Method
-
-### Materials
-
-- Female simultaneous bilingual speaker
-  - ba/pa productions
-  - 'fri' [fɾi] and [fɹi] productions
-  - append lead voicing for /ba/, aspiration for /pa/ (Gonzales &amp; Lotto, 2013)
-- Two 13-step continua (-60ms to 60ms, 10ms increments)
-  - 'Spanish' ba[fɾi]-pa[fɾi]
-  - 'English' ba[fɹi]-pa[fɹi]
-
----
-
-## Method 
-
-### Procedure
-
-&lt;div style="float:right"&gt;
-  &lt;img width="250px" src="./assets/img/2afc1.png"&gt;&lt;/img&gt;  
-  &lt;/br&gt;&lt;/br&gt;
-  &lt;img width="250px" src="./assets/img/2afc3pa.png"&gt;&lt;/img&gt;
-&lt;/div&gt;
-
-- Participants completed two 2AFC identification tasks
-    - Session 1: Spanish - ba[fɾi]-pa[fɾi]
-        - All instructions, materials in Spanish
-        - All correspondence with investigator in Spanish
-    - Session 2: English (24 hrs later) - ba[fɹi]-pa[fɹi]
-        - All instructions, materials in English
-        - All correspondence with investigator in English
-
----
-
-&lt;div align="center"&gt;
-  &lt;img width="100%" src="./assets/img/bafriTuc.png"&gt;
-&lt;/div&gt;
-
-&lt;/br&gt;
-&gt;- Overall probability of selecting /pa/ decreases by 38% when hearing English stimuli
-
----
-
-## Summary of findings
-
-- Higher proportion of 'pafri' responses in Spanish session
-- HSs shifted their perceptual boundary to accommodate English stimuli in session 2
-
----
-
-## Discussion
-
-- HSs maintain separate phonetic systems, shift between them according to the language context
-- No (less) cross-language activation in unilingual settings
-
---- .segue bg:grey
-
-# Percepción categórica en SPAN 459
-
----
-
-
-
-
-
-
-## Dealing with results
-
-- Specify the output format
-- Import results directly into stats program
-
-
-```r
-library(knitr)
-read_chunk('./assets/scripts/analysis.R')
-```
-
-
-```
-## 
-## Attaching package: 'dplyr'
-```
-
-```
-## The following objects are masked from 'package:plyr':
-## 
-##     arrange, count, desc, failwith, id, mutate, rename, summarise,
-##     summarize
-```
-
-```
-## The following objects are masked from 'package:stats':
-## 
-##     filter, lag
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     intersect, setdiff, setequal, union
-```
-
-```
-## Rows: 780
-## Columns: 4
-## $ stim        &lt;dbl&gt; -30, 40, 50, -50, -40, 20, -60, 0, -10, 60, -20, 10, 30, …
-## $ response    &lt;dbl&gt; 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, …
-## $ rt          &lt;dbl&gt; 0.6012590, 0.4843690, 0.5512149, 0.5003850, 0.5836949, 0.…
-## $ participant &lt;chr&gt; "ag", "ag", "ag", "ag", "ag", "ag", "ag", "ag", "ag", "ag…
-```
-
-
-```r
-glimpse(df)
-```
-
-```
-## Rows: 780
-## Columns: 4
-## $ stim        &lt;dbl&gt; -30, 40, 50, -50, -40, 20, -60, 0, -10, 60, -20, 10, 30, …
-## $ response    &lt;dbl&gt; 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, …
-## $ rt          &lt;dbl&gt; 0.6012590, 0.4843690, 0.5512149, 0.5003850, 0.5836949, 0.…
-## $ participant &lt;chr&gt; "ag", "ag", "ag", "ag", "ag", "ag", "ag", "ag", "ag", "ag…
-```
-
----
-
-## 
-
-
-```
-## `summarise()` regrouping output by 'participant' (override with `.groups` argument)
-```
-
-```
-## Warning: `fun.y` is deprecated. Use `fun` instead.
-
-## Warning: `fun.y` is deprecated. Use `fun` instead.
-```
-
-&lt;img src="index_files/figure-html/responsePlot-1.png" style="display: block; margin: auto;" /&gt;
-
----
-
-## 
-
-
-```
-## `geom_smooth()` using formula 'y ~ x'
-```
-
-&lt;img src="index_files/figure-html/responseMod-1.png" style="display: block; margin: auto;" /&gt;
-
----
-
-## 
-
-&lt;img src="index_files/figure-html/rtPlot-1.png" style="display: block; margin: auto;" /&gt;
-
----
-
-## 
-
-&lt;!-- html table generated in R 4.0.2 by xtable 1.8-4 package --&gt;
-&lt;!-- Mon Oct 12 09:10:53 2020 --&gt;
-&lt;table border=1&gt;
-&lt;caption align="bottom"&gt;  &lt;/caption&gt;
-&lt;tr&gt; &lt;th&gt; stim &lt;/th&gt; &lt;th&gt; response &lt;/th&gt;  &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; -60 &lt;/td&gt; &lt;td align="right"&gt; 1.00 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; -50 &lt;/td&gt; &lt;td align="right"&gt; 0.97 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; -40 &lt;/td&gt; &lt;td align="right"&gt; 0.98 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; -30 &lt;/td&gt; &lt;td align="right"&gt; 1.00 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; -20 &lt;/td&gt; &lt;td align="right"&gt; 0.98 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; -10 &lt;/td&gt; &lt;td align="right"&gt; 0.97 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; 0 &lt;/td&gt; &lt;td align="right"&gt; 0.77 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; 10 &lt;/td&gt; &lt;td align="right"&gt; 0.37 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; 20 &lt;/td&gt; &lt;td align="right"&gt; 0.10 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; 30 &lt;/td&gt; &lt;td align="right"&gt; 0.03 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; 40 &lt;/td&gt; &lt;td align="right"&gt; 0.07 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; 50 &lt;/td&gt; &lt;td align="right"&gt; 0.02 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; 60 &lt;/td&gt; &lt;td align="right"&gt; 0.03 &lt;/td&gt; &lt;/tr&gt;
-   &lt;/table&gt;
-
----
-
-## 
-
-&lt;!-- html table generated in R 4.0.2 by xtable 1.8-4 package --&gt;
-&lt;!-- Mon Oct 12 09:10:53 2020 --&gt;
-&lt;table border=1&gt;
-&lt;caption align="bottom"&gt;  &lt;/caption&gt;
-&lt;tr&gt; &lt;th&gt; stim &lt;/th&gt; &lt;th&gt; rt &lt;/th&gt;  &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; -60 &lt;/td&gt; &lt;td align="right"&gt; 0.476 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; -50 &lt;/td&gt; &lt;td align="right"&gt; 0.515 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; -40 &lt;/td&gt; &lt;td align="right"&gt; 0.466 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; -30 &lt;/td&gt; &lt;td align="right"&gt; 0.489 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; -20 &lt;/td&gt; &lt;td align="right"&gt; 0.455 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; -10 &lt;/td&gt; &lt;td align="right"&gt; 0.490 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; 0 &lt;/td&gt; &lt;td align="right"&gt; 0.524 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; 10 &lt;/td&gt; &lt;td align="right"&gt; 0.571 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; 20 &lt;/td&gt; &lt;td align="right"&gt; 0.485 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; 30 &lt;/td&gt; &lt;td align="right"&gt; 0.467 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; 40 &lt;/td&gt; &lt;td align="right"&gt; 0.469 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; 50 &lt;/td&gt; &lt;td align="right"&gt; 0.483 &lt;/td&gt; &lt;/tr&gt;
-  &lt;tr&gt; &lt;td align="right"&gt; 60 &lt;/td&gt; &lt;td align="right"&gt; 0.483 &lt;/td&gt; &lt;/tr&gt;
-   &lt;/table&gt;
-
----
-
-## Conclusión
-
-&lt;div style="float:right"&gt;
-  &lt;img width="100" src="./assets/img/fill.png"&gt;
-  &lt;img width="300" src="./assets/img/clap.gif"&gt;
-&lt;/div&gt;
-
-- Ahora sabéis lo básico de psychopy2
-  - Podéis utilizarlo para crear experimentos psycolingüísticos
-  - Tenéis acceso a la plantillas que podéis modificar
-
-&lt;/br&gt;
-
-- La percepción categórica
-  - "Equal sized physical differences are not equal sized psychologically."
-  - No percibimos los continuos como continuos...
-
-
-
----
-
-## More resources
-
-- http://www.jvcasillas.com/teaching/psychopy/
-- http://www.psychopy.org/ 
-- http://code.google.com/p/psychopy/ 
-- http://www.youtube.com/watch?v=VV6qhuQgsiI
-
----
-
-## References
-
-- &lt;font size="5"&gt;Gray, J. &amp; Pasmanter, N. (2013). [github][github]&lt;/font&gt;
-- &lt;font size="5"&gt;Lejuez, C. W., Aklin, W. M., Zvolensky, M. J., &amp; Pedulla, C. M. (2003). Evaluation of the Balloon Analogue Risk Task (BART) as a predictor of adolescent real-world risk-taking behaviours. Journal of adolescence, 26(4), 475-479. &lt;/font&gt;
-- &lt;font size="5"&gt;McGuire, G. (2010, in progress) A Brief Primer on Experimental Designs in Speech Perception Research. http://people.ucsc.edu/~gmcguir1/ &lt;/font&gt;
-- &lt;font size="5"&gt;Simonet, M. (2012). El diseño de experimentos para el estudio de la percepción del habla. *Laboratory Approaches to Romance Phonology Conference*. El Colegio de México, México D.F.&lt;/font&gt;
-
-
-[github]: https://github.com/psychopy/psychopy/tree/master/psychopy/demos/builder/mental_rotation
-    </textarea>
-<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script src="https://www.jvcasillas.com/ru_xaringan/js/ru_xaringan.js"></script>
-<script>var slideshow = remark.create({
-"highlightStyle": "github",
-"highlightLines": true,
-"countIncrementalSlides": false,
-"ratio": "16:9"
-});
-if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
-  window.dispatchEvent(new Event('resize'));
-});
-(function(d) {
-  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
-  if (!r) return;
-  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
-  d.head.appendChild(s);
-})(document);
-
-(function(d) {
-  var el = d.getElementsByClassName("remark-slides-area");
-  if (!el) return;
-  var slide, slides = slideshow.getSlides(), els = el[0].children;
-  for (var i = 1; i < slides.length; i++) {
-    slide = slides[i];
-    if (slide.properties.continued === "true" || slide.properties.count === "false") {
-      els[i - 1].className += ' has-continuation';
-    }
-  }
-  var s = d.createElement("style");
-  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
-  d.head.appendChild(s);
-})(document);
-// delete the temporary CSS (for displaying all slides initially) when the user
-// starts to view slides
-(function() {
-  var deleted = false;
-  slideshow.on('beforeShowSlide', function(slide) {
-    if (deleted) return;
-    var sheets = document.styleSheets, node;
-    for (var i = 0; i < sheets.length; i++) {
-      node = sheets[i].ownerNode;
-      if (node.dataset["target"] !== "print-only") continue;
-      node.parentNode.removeChild(node);
-    }
-    deleted = true;
-  });
-})();
-(function() {
-  "use strict"
-  // Replace <script> tags in slides area to make them executable
-  var scripts = document.querySelectorAll(
-    '.remark-slides-area .remark-slide-container script'
-  );
-  if (!scripts.length) return;
-  for (var i = 0; i < scripts.length; i++) {
-    var s = document.createElement('script');
-    var code = document.createTextNode(scripts[i].textContent);
-    s.appendChild(code);
-    var scriptAttrs = scripts[i].attributes;
-    for (var j = 0; j < scriptAttrs.length; j++) {
-      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
-    }
-    scripts[i].parentElement.replaceChild(s, scripts[i]);
-  }
-})();
-(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
-
-<script>
-slideshow._releaseMath = function(el) {
-  var i, text, code, codes = el.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      text = code.textContent;
-      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$\$(.|\s)+\$\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
-        continue;
+</audio></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  
+  <hgroup>
+    <h2>Inglés vs. español</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>El sonido /t/ del español difiere del /t/ del inglés en cuanto al <strong>punto de articulación</strong> y VOT</h3>
+
+<p></p>
+
+<ul>
+<li>Punto de articulación: ¿Dónde se produce el contacto al pronunciar /t/?
+
+<ul>
+<li>/t/ del español es dental </li>
+<li>/t/ del inglés es alveolar</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  
+  <hgroup>
+    <h2>Inglés vs. español</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>El sonido /t/ del español difiere del /t/ del inglés en cuanto al punto de articulación y <strong>VOT</strong></h3>
+
+<p></p>
+
+<ul>
+<li><strong>VOT</strong> (voice-onset time): En las consonantes oclusivas, es la diferencia (en milisegundos) entre la explosión de la consonante y el comienzo de la fonación.
+
+<ul>
+<li>Es el resultado de la coordinación de gestos articulatorios (la explosión y la vibración de las cuerdas vocales)</li>
+<li>VOT puede ser negativo, 0, o positivo y se usa para contrastar entre sonido sordos/sonoros</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-27" style="background:;">
+  
+  <hgroup>
+    <h2>VOT</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <div style="float:right">
+  <img width="50" src="./assets/img/fill.png">
+  <img src="./assets/img/confundido.png">
+</div>
+
+<ul>
+<li>Español e inglés mantienen un contraste entre /<strong>p t k</strong>/ and /<BLUE>b d g</BLUE>/ </li>
+<li>La realización fonética es diferente
+
+<ul>
+<li>Español: /d/ tiene lead VOT y /t/ tiene short-lag VOT</li>
+<li>Inglés: /d/ tiene short-lag VOT y /t/ tiene aspiración</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-28" style="background:;">
+  
+  <article data-timings="">
+    <p></br></br></p>
+
+<div align="center">
+  <img src="./assets/img/sp_en_stops.png">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-29" style="background:;">
+  
+  <hgroup>
+    <h2>La percepción del habla</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>¿Cómo diferenciamos entre el habla y el ruido?</li>
+<li>¿Cómo extraemos la información relevante de una señal pobre?</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-30" style="background:;">
+  
+  <hgroup>
+    <h2>La ausencia de invarianza</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Los sonidos del habla nunca se pronuncian de la misma forma</li>
+<li>Si digo <code>taco</code> [ˈta.ko] 10 veces, nunca es físicamente igual </li>
+<li>¿Cómo es que somos capaces de relacionar el sonido con el concepto de un fonema?</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-31" style="background:;">
+  
+  <hgroup>
+    <h2>La percepción categórica</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>&quot;Equal sized physical differences are not equal sized psychologically.&quot;</li>
+<li>No percibimos los continuos como continuos...</li>
+<li>Las diferencias dentro de la misma categoría se disminuyen </li>
+<li>Las diferencias entre categorías se aumentan</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-32" style="background:;">
+  
+  <article data-timings="">
+    <div align="center">  
+  <img width="900" src="./assets/img/colors.png">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-33" style="background:;">
+  
+  <article data-timings="">
+    <div align="center">
+  <img width="900" src="./assets/img/pc1.png"> 
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-34" style="background:;">
+  
+  <article data-timings="">
+    <div align="center">
+  <img width="900" src="./assets/img/pc2.png">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-35" style="background:;">
+  
+  <hgroup>
+    <h2>La percepción categórica</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>¿Cómo estudiamos la percepción categórica?
+
+<ul>
+<li>2AFC (identificación)</li>
+<li>AX (discriminación)</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-36" style="background:;">
+  
+  <article data-timings="">
+    <p></br></br></br></p>
+
+<div align="center">
+  <img width="900" src="./assets/img/bapa1.png">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-37" style="background:;">
+  
+  <article data-timings="">
+    <p></br></br></br></p>
+
+<div align="center">
+  <img width="900" src="./assets/img/bapa2.png">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-38" style="background:;">
+  
+  <article data-timings="">
+    <p></br></br></br></p>
+
+<div align="center">
+  <img width="900" src="./assets/img/bapa3.png">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-39" style="background:;">
+  
+  <article data-timings="">
+    <p></br></br></br></p>
+
+<div align="center">
+  <img width="900" src="./assets/img/bapa4.png">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-40" style="background:;">
+  
+  <article data-timings="">
+    <p></br></br></br></p>
+
+<div align="center">
+  <img width="900" src="./assets/img/bapa5.png">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-41" style="background:;">
+  
+  <article data-timings="">
+    <div align="center">
+  <img width="900" src="./assets/img/bapa6.png">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-42" style="background:;">
+  
+  <article data-timings="">
+    <div align="center">
+  <img width="900" src="./assets/img/bapa7.png">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-43" style="background:;">
+  
+  <article data-timings="">
+    <div align="center">
+  <img width="900" src="./assets/img/pc3.png">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-44" style="background:;">
+  
+  <hgroup>
+    <h2>La percepción categórica</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>&quot;Equal sized physical differences are not equal sized psychologically.&quot;</li>
+<li>No percibimos los continuos como continuos...</li>
+<li>Las diferencias dentro de la misma categoría se disminuyen </li>
+<li>Las diferencias entre categorías se aumentan</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue" id="slide-45" style="background:black;">
+  
+  <hgroup>
+    <h1>La percepción categórica y el bilingüismo</h1>
+  </hgroup>
+  
+  <article data-timings="">
+    <p></br></br></br></br></br></br></br></br></br></br></br>
+<strong>Pallier et al. (1997)</strong></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-46" style="background:;">
+  
+  <hgroup>
+    <h2>La percepción categórica</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Pallier et al. (1997)</h3>
+
+<ul>
+<li>Bilingües secuenciales tempranos: español/catalán, catalán/español</li>
+<li>El catalán cuenta con un contraste vocálico que no existe en español (/e/-/ɛ/)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-47" style="background:;">
+  
+  <hgroup>
+    <h2>La percepción categórica</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Pallier et al. (1997)</h3>
+
+<p></p>
+
+<div align="center">
+  <img width="400" src="./assets/img/spanish.png"> 
+  <img width="400" src="./assets/img/catalan.png">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-48" style="background:;">
+  
+  <hgroup>
+    <h2>La percepción categórica</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Pallier et al. (1997)</h3>
+
+<ul>
+<li>Bilingües secuenciales tempranos: español/catalán, catalán/español</li>
+<li>El catalán cuenta con un contraste vocálico que no existe en español (/e/-/ɛ/)</li>
+<li>Identificación (2AFC)
+
+<ul>
+<li>&quot;¿Escuchaste <a href="Peter">ˈ<strong>pe</strong>.<strong>ɾa</strong></a> o <a href="pera">ˈ<BLUE>pɛ</BLUE>.<BLUE>ɾa</BLUE></a>?&quot;</li>
+</ul></li>
+<li>Discriminación
+
+<ul>
+<li>&quot;¿Son iguales o son diferentes?&quot;</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-49" style="background:;">
+  
+  <article data-timings="">
+    <div align="center">
+  <img src="./assets/img/pallier1.png">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-50" style="background:;">
+  
+  <article data-timings="">
+    <div align="center">
+  <img src="./assets/img/pallier2.png">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-51" style="background:;">
+  
+  <hgroup>
+    <h2>La percepción categórica</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Pallier et al. (1997)</h3>
+
+<ul>
+<li>Conclusión
+
+<ul>
+<li>Los bilingües tempranos español/catalán no perciben el contraste entre las vocales /e/-/ɛ/ de manera categórica</li>
+<li>Estar expuesto a una edad temprana (durante el periodo sensible) no parece ser suficiente</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue" id="slide-52" style="background:black;">
+  
+  <hgroup>
+    <h1>La percepción categórica y el bilingüismo</h1>
+  </hgroup>
+  
+  <article data-timings="">
+    <p></br></br></br></br></br></br></br></br></br></br></br>
+<strong>Language-specific stop perception in highly proficient Heritage Speakers</strong></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-53" style="background:;">
+  
+  <hgroup>
+    <h2>La percepción categórica</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Bilingual Language Modes (Grosjean, 1998)</h3>
+
+<blockquote>
+<p>[...] state of activation of the bilingual&#39;s languages and language processing 
+mechanisms at a given point in time (Grosjean, 2002)</p>
+</blockquote>
+
+<ul>
+<li>Activation of languages increases/decreases as a function of communicative setting
+
+<ul>
+<li>Bilingual mode: both languages activated</li>
+<li>Unilingual mode: one language activated</li>
+</ul></li>
+<li>Some bilinguals can reduce cross-language interactions in a unilingual setting (Antoniou et al. 2010; Magloire and Green 1999)</li>
+<li><strong>Do highly proficient HSs inhibit cross-language interaction effects a unilingual setting?</strong></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-54" style="background:;">
+  
+  <article data-timings="">
+    <p></br></p>
+
+<div align="center">
+  <img width="900" src="./assets/img/sp_en_stops.png">
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-55" style="background:;">
+  
+  <hgroup>
+    <h2>Method</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Participants</h3>
+
+<ul>
+<li>9 highly proficient Spanish/English bilinguals
+
+<ul>
+<li>6 females</li>
+<li>3 males</li>
+</ul></li>
+<li>Young adults: ages 20-26 </li>
+<li>Bilingual Language Profile (BLP) questionnaire (-10.16)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-56" style="background:;">
+  
+  <hgroup>
+    <h2>Method</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Materials</h3>
+
+<ul>
+<li>Female simultaneous bilingual speaker
+
+<ul>
+<li>ba/pa productions</li>
+<li>&#39;fri&#39; [fɾi] and [fɹi] productions</li>
+<li>append lead voicing for /ba/, aspiration for /pa/ (Gonzales &amp; Lotto, 2013)</li>
+</ul></li>
+<li>Two 13-step continua (-60ms to 60ms, 10ms increments)
+
+<ul>
+<li>&#39;Spanish&#39; ba[fɾi]-pa[fɾi]</li>
+<li>&#39;English&#39; ba[fɹi]-pa[fɹi]</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-57" style="background:;">
+  
+  <hgroup>
+    <h2>Method</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Procedure</h3>
+
+<div style="float:right">
+  <img width="250px" src="./assets/img/2afc1.png"></img>  
+  </br></br>
+  <img width="250px" src="./assets/img/2afc3pa.png"></img>
+</div>
+
+<ul>
+<li>Participants completed two 2AFC identification tasks
+
+<ul>
+<li>Session 1: Spanish - ba[fɾi]-pa[fɾi]
+
+<ul>
+<li>All instructions, materials in Spanish</li>
+<li>All correspondence with investigator in Spanish</li>
+</ul></li>
+<li>Session 2: English (24 hrs later) - ba[fɹi]-pa[fɹi]
+
+<ul>
+<li>All instructions, materials in English</li>
+<li>All correspondence with investigator in English</li>
+</ul></li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-58" style="background:;">
+  
+  <article data-timings="">
+    <div align="center">
+  <img width="100%" src="./assets/img/bafriTuc.png">
+</div>
+
+<p></br></p>
+
+<ul class = "build incremental">
+<li>Overall probability of selecting /pa/ decreases by 38% when hearing English stimuli</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-59" style="background:;">
+  
+  <hgroup>
+    <h2>Summary of findings</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Higher proportion of &#39;pafri&#39; responses in Spanish session</li>
+<li>HSs shifted their perceptual boundary to accommodate English stimuli in session 2</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-60" style="background:;">
+  
+  <hgroup>
+    <h2>Discussion</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>HSs maintain separate phonetic systems, shift between them according to the language context</li>
+<li>No (less) cross-language activation in unilingual settings</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue" id="slide-61" style="background:grey;">
+  
+  <hgroup>
+    <h1>Percepción categórica en SPAN 459</h1>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-62" style="background:;">
+  
+  <hgroup>
+    <h2>Dealing with results</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Specify the output format</li>
+<li>Import results directly into stats program</li>
+</ul>
+
+<pre><code class="r">library(knitr)
+read_chunk(&#39;./assets/scripts/analysis.R&#39;)
+</code></pre>
+
+<pre><code class="r">glimpse(df)
+</code></pre>
+
+<pre><code>## Observations: 130
+## Variables: 4
+## $ stim        (dbl) -30, 10, -20, 50, 0, 20, -50, 40, -10, -40, -60, 3...
+## $ response    (dbl) 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1,...
+## $ rt          (dbl) 0.5678380, 0.9005539, 0.5168958, 0.2171149, 0.4516...
+## $ participant (fctr) jc, jc, jc, jc, jc, jc, jc, jc, jc, jc, jc, jc, j...
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-63" style="background:;">
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-64" style="background:;">
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-65" style="background:;">
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-66" style="background:;">
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-67" style="background:;">
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-68" style="background:;">
+  
+  <hgroup>
+    <h2>Conclusión</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <div style="float:right">
+  <img width="100" src="./assets/img/fill.png">
+  <img width="300" src="./assets/img/clap.gif">
+</div>
+
+<ul>
+<li>Ahora sabéis lo básico de psychopy2
+
+<ul>
+<li>Podéis utilizarlo para crear experimentos psycolingüísticos</li>
+<li>Tenéis acceso a la plantillas que podéis modificar</li>
+</ul></li>
+</ul>
+
+<p></br></p>
+
+<ul>
+<li>La percepción categórica
+
+<ul>
+<li>&quot;Equal sized physical differences are not equal sized psychologically.&quot;</li>
+<li>No percibimos los continuos como continuos...</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-69" style="background:;">
+  
+  <hgroup>
+    <h2>More resources</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li><a href="http://www.jvcasillas.com/teaching/psychopy/">http://www.jvcasillas.com/teaching/psychopy/</a></li>
+<li><a href="http://www.psychopy.org/">http://www.psychopy.org/</a> </li>
+<li><a href="http://code.google.com/p/psychopy/">http://code.google.com/p/psychopy/</a> </li>
+<li><a href="http://www.youtube.com/watch?v=VV6qhuQgsiI">http://www.youtube.com/watch?v=VV6qhuQgsiI</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-70" style="background:;">
+  
+  <hgroup>
+    <h2>References</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li><font size="5">Gray, J. &amp; Pasmanter, N. (2013). <a href="https://github.com/psychopy/psychopy/tree/master/psychopy/demos/builder/mental_rotation">github</a></font></li>
+<li><font size="5">Lejuez, C. W., Aklin, W. M., Zvolensky, M. J., &amp; Pedulla, C. M. (2003). Evaluation of the Balloon Analogue Risk Task (BART) as a predictor of adolescent real-world risk-taking behaviours. Journal of adolescence, 26(4), 475-479. </font></li>
+<li><font size="5">McGuire, G. (2010, in progress) A Brief Primer on Experimental Designs in Speech Perception Research. <a href="http://people.ucsc.edu/%7Egmcguir1/">http://people.ucsc.edu/~gmcguir1/</a> </font></li>
+<li><font size="5">Simonet, M. (2012). El diseño de experimentos para el estudio de la percepción del habla. <em>Laboratory Approaches to Romance Phonology Conference</em>. El Colegio de México, México D.F.</font></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Plan'>
+         1
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='PsychoPy2'>
+         2
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='PsychoPy2'>
+         3
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='PsychoPy2'>
+         4
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Experimentos'>
+         5
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Para empezar'>
+         6
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='La interfaz'>
+         7
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='La interfaz (Modo &#39;coder&#39;)'>
+         8
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='La interfaz (Modo &#39;builder&#39;)'>
+         9
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='La interfaz (Experiment flow)'>
+         10
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Las rutinas'>
+         11
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Lista de componentes'>
+         12
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Demo'>
+         13
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='2AFC'>
+         14
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='NA'>
+         15
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='NA'>
+         16
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='NA'>
+         17
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Haced lo siguiente:'>
+         18
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='NA'>
+         19
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Haced lo siguiente:'>
+         20
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Haced lo siguiente:'>
+         21
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='La percepción categórica'>
+         22
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='¿Cuáles son las diferencias entre /t/ del inglés y /t/ del español?'>
+         23
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='NA'>
+         24
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='Inglés vs. español'>
+         25
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Inglés vs. español'>
+         26
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='VOT'>
+         27
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='NA'>
+         28
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='La percepción del habla'>
+         29
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='La ausencia de invarianza'>
+         30
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='La percepción categórica'>
+         31
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='NA'>
+         32
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title='NA'>
+         33
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=34 title='NA'>
+         34
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=35 title='La percepción categórica'>
+         35
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=36 title='NA'>
+         36
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=37 title='NA'>
+         37
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=38 title='NA'>
+         38
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=39 title='NA'>
+         39
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=40 title='NA'>
+         40
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=41 title='NA'>
+         41
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=42 title='NA'>
+         42
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=43 title='NA'>
+         43
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=44 title='La percepción categórica'>
+         44
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=45 title='La percepción categórica y el bilingüismo'>
+         45
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=46 title='La percepción categórica'>
+         46
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=47 title='La percepción categórica'>
+         47
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=48 title='La percepción categórica'>
+         48
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=49 title='NA'>
+         49
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=50 title='NA'>
+         50
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=51 title='La percepción categórica'>
+         51
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=52 title='La percepción categórica y el bilingüismo'>
+         52
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=53 title='La percepción categórica'>
+         53
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=54 title='NA'>
+         54
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=55 title='Method'>
+         55
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=56 title='Method'>
+         56
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=57 title='Method'>
+         57
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=58 title='NA'>
+         58
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=59 title='Summary of findings'>
+         59
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=60 title='Discussion'>
+         60
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=61 title='Percepción categórica en SPAN 459'>
+         61
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=62 title='Dealing with results'>
+         62
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=63 title='NA'>
+         63
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=64 title='NA'>
+         64
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=65 title='NA'>
+         65
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=66 title='NA'>
+         66
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=67 title='NA'>
+         67
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=68 title='Conclusión'>
+         68
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=69 title='More resources'>
+         69
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=70 title='References'>
+         70
+      </a>
+    </li>
+    
+    </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
       }
-    }
-    i++;
-  }
-};
-slideshow._releaseMath(document);
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  
+<script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
 </script>
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
-  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
-    script.src  = script.src.replace(/^https?:/, '');
-  document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-  </body>
-</html>
+
+  
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

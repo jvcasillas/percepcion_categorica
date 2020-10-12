@@ -634,52 +634,57 @@ for p in iter_primes():
 - Specify the output format
 - Import results directly into stats program
 
-```{r echo=TRUE}
+
+```r
 library(knitr)
 read_chunk('./assets/scripts/analysis.R')
 ```
 
-```{r 'loadClean', echo=FALSE}
-```
 
-```{r}
+
+
+```r
 glimpse(df)
 ```
 
----
-
-## 
-
-```{r 'responsePlot', echo=FALSE, fig.align='center', fig.width=13, fig.height=8.5, cache=FALSE}
+```
+## Observations: 130
+## Variables: 4
+## $ stim        (dbl) -30, 10, -20, 50, 0, 20, -50, 40, -10, -40, -60, 3...
+## $ response    (dbl) 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1,...
+## $ rt          (dbl) 0.5678380, 0.9005539, 0.5168958, 0.2171149, 0.4516...
+## $ participant (fctr) jc, jc, jc, jc, jc, jc, jc, jc, jc, jc, jc, jc, j...
 ```
 
 ---
 
 ## 
 
-```{r 'responseMod', echo=FALSE, fig.align='center', fig.width=13, fig.height=8.5, cache=FALSE}
-```
+
 
 ---
 
 ## 
 
-```{r 'rtPlot', echo=FALSE, fig.align='center', fig.width=13, fig.height=8.5, cache=FALSE, warning=FALSE, message=FALSE}
-```
+
 
 ---
 
 ## 
 
-```{r 'table1', echo=FALSE, results='asis'}
-```
+
 
 ---
 
 ## 
 
-```{r 'table2', echo=FALSE, results='asis', cache=FALSE}
-```
+
+
+---
+
+## 
+
+
 
 ---
 
